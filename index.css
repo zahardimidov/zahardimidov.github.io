@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "MyFont";
+    src: url(Forum.ttf);
+}
+
+html, body{
+    margin: 0 auto;
+}
+body{
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: "MyFont" !important;
+    font-size: 24px !important;
+}
+
+
+section._anim-items {
+    opacity: 0;
+    transform: translate(0px, 10%);
+    transition: all 0.8s ease;
+}
+section._anim-items._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+@keyframes topDown {   
+    0% {     
+      top: 90%;
+    }
+    50% {
+      top: 85%;
+     }
+    100%{
+        top: 90%;
+    }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+div#header-container, div.calendar-containner {
+    position: relative;
+}
+div#header-container > .names {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    filter: brightness(0) invert(1);
+
+    opacity: 0;
+    transition: all 1.1s ease;
+}
+div#header-container > .names._active {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+div#header-container > .arrow {
+    position: absolute;
+    width: 50px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    filter: brightness(0) invert(1);
+    animation: topDown 2s linear infinite;
+    transition: all 0.5s ease;
+}
+div#header-container > .arrow:hover{
+    transform: scale(1.5) translateX(-30%);
+    filter: brightness(1) invert(1);
+    animation-play-state: paused;
+}
+div#header-container::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    background-image: url('images/kostya_alina.jpg');
+    filter: blur(20px);
+    z-index: -1;
+  }
+
+div.calendar-containner .ring{
+    position: absolute;
+    top: 23%;
+    right: 0;
+    width: 15%;
+    transform: translate(-50%, -50%);
+    transform-origin: 40% 57%;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(40deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+a.button{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background-color: #165c42;
+    color: #fff;
+    width: 300px;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+a.button:hover {
+    padding: 20px;
+    transform: translate(0, -2px);
+    transition: all 0.3s ease;
+}
+a.button:not(:hover) {
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.until span {
+    font-size: 14px;
+}
+
+.timer-circle {
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    line-height: 12px;
+    border: 4px solid #165c42;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+@media (max-width: 425px) {
+    div#header-container > .names{
+        width: 200px;
+    }
+    body{
+        font-size: 18px !important;
+    }
+    a.button{
+        width: 225px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .wineglass{
+        width: 100px;
+    }
+    .point{
+        width: 180px;
+    }
+    .arrow{
+        width: 30px !important;
+    }
+}
+  
+@media (min-width: 768px) {
+    .content {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .tm {
+        font-size: 32px;
+    }
+    .wineglass{
+        width: 150px;
+    }
+    .point{
+        width: 250px;
+    }
+}
