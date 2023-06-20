@@ -52,12 +52,26 @@ setInterval( function(){
     hoursEl.innerHTML = hours;
     minutesEl.innerHTML = minutes;
     secondsEl.innerHTML = seconds;
-    console.log('Second')
 }, 1000);
 
-function scrollToElement(id){
-    document.getElementById(id).scrollIntoView({
+function scrollDown(el){
+    document.getElementById('timer').scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     });
 }
+addEventListener('touchstart', function() {
+    var arrow = document.querySelector('.arrow');
+    var style = window.getComputedStyle(arrow);
+    var filter = style.getPropertyValue("filter");
+    var brightness = filter.match(/brightness\((\d+)\)/);
+
+    if (brightness) {
+        brightness = parseInt(brightness[1], 10);
+
+        if (brightness == 1){
+            var clone = arrow.cloneNode(true);
+            arrow.replaceWith(clone);
+        }
+    }
+});

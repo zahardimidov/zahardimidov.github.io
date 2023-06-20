@@ -78,6 +78,7 @@ div#header-container > .arrow:hover{
     filter: brightness(1) invert(1);
     animation-play-state: paused;
 }
+
 div#header-container::before {
     content: "";
     position: absolute;
