@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <link rel="stylesheet" href="index.css?v=1.0.1">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="/" class="header__logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a onclick="Scroll('div.content .main')" class="header__link">Проекты</a>
+                            </li>
+                            <li>
+                                <a onclick="Scroll('section.about')" class="header__link">О компании</a>
+                            </li>
+                            <li>
+                                <a onclick="Scroll('div.content .main')" class="header__link">Реализованный</a>
+                            </li>
+                            <li>
+                                <a onclick="Scroll('section.sotrs')" class="header__link">Сотрудники</a>
+                            </li>
+                            <li>
+                                <a onclick="Scroll('section.partners')" class="header__link">Партнеры</a>
+                            </li>
+                            <li>
+                                <a onclick="Scroll('section.contacts')" class="header__link">Контакты</a>
+                            </li>
+                            <li>
+                                <a onclick="Scroll('section.about')" class="header__link">Гарантии</a>
+                            </li>
+                        </ul>
+
+                        <div class="contact">
+                            <div class="header__phone left">
+                                <a href="tel:79822417936">+7 (982) 241-79-36</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="contact">
+                        <div class="header__phone">
+                            <a href="tel:79822417936">+7 (982) 241-79-36</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row main">
+                <div class="col-xs-12 col-md-6">
+                    <div class="obj uno">
+                        <img src="images/logo_uno.png" alt="uno">
+                        <a type="button" target="_blank" href="https://yandex.ru/maps/-/CPaVLB">Посмотреть на карте</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="obj aqua">
+                        <img src="images/aqua_logo.png" alt="aqua">
+                        <a type="button" target="_blank" href="https://yandex.ru/maps/-/CPaVLB">Посмотреть на карте</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="obj urban">
+                        <img src="images/urban_logo.png" alt="urban">
+                        <a type="button" target="_blank" href="https://yandex.ru/maps/-/CPaVLB">Посмотреть на карте</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="obj domingo">
+                        <img src="images/domingo_logo.png" alt="domingo">
+                        <a type="button" target="_blank" href="https://yandex.ru/maps/-/CPaVLB">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="container about">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="title">О компании</div>
+                        <p>ИНГРУПП − надежный пермский застройщик, который строит дома для счастливой жизни. </p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img src="images/award.jpg" alt="award" width="100">
+                        <img src="images/perm.png" alt="perm" width="100">
+                    </div>
+                </div>
+                <div class="row about-portfolio">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-image"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="brik">
+                            <div class="brik-stats"><em>22</em> Объекта</div>
+                            <p class="brik-info">В портфеле</p>
+                        </div>
+                        <div class="brik" style="margin-block: 30px;">
+                            <div class="brik-stats"><em>86 049</em> кв.м</div>
+                            <p class="brik-info">Введено в эксплуатацию</p>
+                        </div>
+                        <div class="brik">
+                            <div class="brik-stats"><em>104 720</em> кв.м</div>
+                            <p class="brik-info">В работе</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row panels">
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="sub-panel">
+                            <div class="sub-panel-header">
+                                <div class="sub-image">
+                                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 512 512">
+                                        <g> <g> <path d="M122.989,74.99v116.64c0,62.322,13.467,112.016,41.171,151.921c20.773,29.923,50.085,56.127,91.841,82.009
+                                        c41.756-25.883,71.068-52.085,91.841-82.008c27.705-39.906,41.171-89.6,41.171-151.922V74.99H122.989z M286.602,233.812v83.905
+                                        h-61.203v-83.905c-14.966-9.928-24.839-26.921-24.839-46.225c0.001-30.619,24.822-55.44,55.441-55.44s55.44,24.821,55.44,55.44
+                                        C311.441,206.892,301.568,223.885,286.602,233.812z"></path> </g> </g> <g> <g>
+                                        <path d="M47.998,0v191.631c0,78.121,17.847,141.803,54.56,194.687c31.956,46.032,78.43,84.72,146.253,121.757L256,512l7.188-3.925
+                                        c67.824-37.036,114.298-75.724,146.253-121.757c36.713-52.884,54.56-116.566,54.56-194.687V0H47.998z M419.009,191.631
+                                        c0,68.641-15.219,123.931-46.527,169.029c-24.546,35.357-59.115,65.649-108.788,95.331l-7.693,4.597l-7.693-4.597
+                                        c-49.675-29.682-84.242-59.973-108.788-95.332c-31.308-45.096-46.527-100.385-46.527-169.028V44.994h326.017V191.631z"></path>
+                                        </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g>
+                                        </g> <g> </g> <g> </g>
+                                    </svg>
+                                </div>
+                                <div>Надежность</div>
+                            </div>
+                            <div class="sub-panel-body">
+                                <p>ИНГРУПП один из первых в г.Перми стартовал с новым механизмом финансирования долевого строительства с использованием эскроу-счетов. Это выгодная схема, которая защищает всех участников сделки - Ваша покупка под надёжной защитой!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="sub-panel">
+                            <div class="sub-panel-header">
+                                <div class="sub-image">
+                                    <svg version="1.1" viewBox="0 0 512 512">
+                                        <g> <g> <path d="M298.853,183.203H139.662c-8.286,0-15.003,6.717-15.003,15.003s6.717,15.003,15.003,15.003h159.191
+                                        c8.286,0,15.003-6.717,15.003-15.003S307.139,183.203,298.853,183.203z"></path> </g> </g> <g> <g>
+                                        <path d="M259.43,227.354h-80.345c-8.285,0-15.003,6.717-15.003,15.003c0,8.285,6.717,15.003,15.003,15.003h80.345
+                                        c8.286,0,15.003-6.717,15.003-15.003C274.433,234.072,267.716,227.354,259.43,227.354z"></path> </g> </g> <g> <g>
+                                        <path d="M438.516,251.613V114.809c0-19.88-16.173-36.054-36.053-36.054H36.054C16.173,78.755,0,94.929,0,114.809v210.945
+                                        c0,19.88,16.173,36.054,36.054,36.054H330.81c9.26,40.847,45.854,71.437,89.462,71.437c50.578,0,91.728-41.149,91.728-91.729
+                                        C512,297.182,480.384,260.096,438.516,251.613z M402.463,108.761c3.335,0,6.047,2.714,6.047,6.048v28.078
+                                        c-16.647-3.905-29.681-17.286-33.061-34.126H402.463z M30.005,114.808c0-3.334,2.713-6.047,6.048-6.047h26.282
+                                        c-3.331,16.594-16.032,29.838-32.33,33.957V114.808z M36.054,331.802c-3.336,0-6.048-2.714-6.048-6.048v-28.168
+                                        c16.382,4.141,29.126,17.502,32.376,34.216H36.054z M329.059,331.802H92.711c-3.784-33.288-29.741-59.938-62.705-64.768V173.27
+                                        c32.879-4.817,58.784-31.343,62.672-64.51h252.428c3.918,33.411,30.18,60.073,63.404,64.603v77.177
+                                        C366.637,255.924,333.516,289.652,329.059,331.802z M420.272,403.239c-34.034,0-61.723-27.689-61.723-61.723
+                                        c0-34.033,27.689-61.722,61.723-61.722c34.033,0,61.722,27.689,61.722,61.722C481.995,375.55,454.307,403.239,420.272,403.239z"></path>
+                                        </g> </g> <g> <g> <path d="M458.245,315.377c-5.857-5.859-15.357-5.859-21.216-0.001l-25.254,25.254l-7.322-7.322
+                                        c-5.858-5.858-15.358-5.858-21.217,0c-5.859,5.858-5.859,15.358,0,21.217l17.931,17.931c2.93,2.93,6.769,4.395,10.608,4.395
+                                        c3.839,0,7.679-1.465,10.608-4.395l35.862-35.862C464.104,330.736,464.104,321.236,458.245,315.377z"></path>
+                                        </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                    </svg>
+                                </div>
+                                <div>Качество</div>
+                            </div>
+                            <div class="sub-panel-body">
+                                <p>За годы работы наша компания выработала свои умные решения и стандарты качества, которые позволяют строить дома, отвечающие современным требованиям. Мы воплощаем Ваши мечты в реальность. Мы создаём дома, которыми можно гордиться!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="sub-panel">
+                            <div class="sub-panel-header">
+                                <div class="sub-image">
+                                    <svg version="1.1" viewBox="0 0 512 512">
+                                        <g> <g> <path d="M357.423,209.039c-9.093-9.093-23.832-9.093-32.925,0l-66.389,66.386c-3.286-0.779-6.708-1.203-10.23-1.203
+                                        c-24.435,0-44.316,19.897-44.316,44.358c0,24.457,19.88,44.357,44.316,44.357c24.46,0,44.357-19.9,44.357-44.357
+                                        c0-3.523-0.424-6.945-1.203-10.231l66.389-66.386C366.515,232.871,366.515,218.13,357.423,209.039z"></path>
+                                        </g> </g> <g> <g> <path d="M437.083,120.099c-99.837-99.837-262.318-99.837-362.206,0.003c-86.213,86.257-99.573,222.315-31.769,323.513
+                                        c7.156,10.683,21.618,13.535,32.3,6.38c10.681-7.156,13.538-21.617,6.38-32.3c-19.051-28.437-30.268-60.238-33.925-92.598h21.887
+                                        c12.857,0,23.281-10.422,23.281-23.281c0-12.856-10.424-23.281-23.281-23.281H47.789C52.008,239.863,66.9,202.32,92,170.742
+                                        l15.842,15.842c4.546,4.547,10.504,6.821,16.461,6.821c5.958,0,11.917-2.274,16.461-6.821c9.092-9.09,9.092-23.832,0-32.924
+                                        l-15.909-15.91c32.054-25.745,69.977-40.674,108.842-44.8v21.986c0,12.859,10.424,23.281,23.281,23.281
+                                        c12.857,0,23.281-10.422,23.281-23.281V93.163c38.183,4.411,75.369,19.28,106.875,44.596l-15.902,15.902
+                                        c-9.09,9.093-9.09,23.832,0.003,32.927c4.544,4.544,10.504,6.818,16.459,6.818c5.96,0,11.917-2.274,16.463-6.821l15.826-15.826
+                                        c25.109,31.572,40.004,69.111,44.224,107.779h-21.961c-12.856,0-23.281,10.425-23.281,23.281
+                                        c0,12.859,10.425,23.281,23.281,23.281h21.889c-3.658,32.36-14.878,64.159-33.935,92.595c-7.16,10.68-4.304,25.142,6.374,32.3
+                                        c3.981,2.668,8.485,3.947,12.941,3.947c7.503,0,14.869-3.622,19.362-10.321C536.709,342.411,523.338,206.353,437.083,120.099z"></path>
+                                        </g> </g> <g> <g> <path d="M360.924,420.217H151.074c-12.857,0-23.281,10.425-23.281,23.281c0,12.859,10.424,23.281,23.281,23.281h209.851
+                                        c12.859,0,23.281-10.422,23.281-23.281C384.205,430.642,373.783,420.217,360.924,420.217z"></path> </g> </g> <g> </g>
+                                        <g></g><g></g><g></g><g></g><g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g> <g> </g>
+                                    </svg>
+                                </div>
+                                <div>Скорость</div>
+                            </div>
+                            <div class="sub-panel-body">
+                                <p>Мы гордимся отлаженностью производственных процессов и применяем новейшие технологии и современные инженерные решения, что отражается на скорости производства работ, - объекты сдаются значительно раньше заявленного срока!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container sotrs">
+                <div class="title">Отдел продаж</div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="sotr-container">
+                            <div class="sotr-image-container">
+                                <div class="sotr-image" style="background-image: url('images/sotrudnik1.jpg');"></div>
+                            </div>
+                            <div class="sotr-name">Ковалевская Наталья</div>
+                            <div class="sotr-info">Руководитель отдела продаж</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="sotr-container">
+                            <div class="sotr-image-container">
+                                <div class="sotr-image" style="background-image: url('images/sotrudnik2.jpg');"></div>
+                            </div>
+                            <div class="sotr-name">Ковалевская Ирина</div>
+                            <div class="sotr-info">Менеджер отдела продаж</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="sotr-container">
+                            <div class="sotr-image-container">
+                                <div class="sotr-image" style="background-image: url('images/sotrudnik3.jpg');"></div>
+                            </div>
+                            <div class="sotr-name">Аникина Елена</div>
+                            <div class="sotr-info">Менеджер отдела продаж</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="sotr-container">
+                            <div class="sotr-image-container">
+                                <div class="sotr-image" style="background-image: url('images/sotrudnik4.jpg');"></div>
+                            </div>
+                            <div class="sotr-name">Кулакова Ирина</div>
+                            <div class="sotr-info">Менеджер отдела продаж</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container partners">
+                <div class="title">Партнёры ИНГРУПП</div>
+
+                <div class="partners">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/alfa.png" alt="alfa">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/akbars.png" alt="akbars">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/bankdom.png" alt="bankdom">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/gasprom.png" alt="gasprom">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/hz.png" alt="hz">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/metalinvestbank.png" alt="metalinvestbank">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/otrk.png" alt="otrk">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/sber.jpg" alt="sber">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/svyzbank.png" alt="svyzbank">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/tkb.png" alt="tkb">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <div class="partner">
+                                <img src="images/partners/vtb.png" alt="vtb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container contacts">
+                <div class="title">Контакты</div>
+                <div class="row">
+                    <div class="col-sm-12 col-sm-6 col-md-6 col-xl-4" style="padding: 0;">
+                        <div style="background-color: #f5f5f7;" class="left-block">
+                            <div class="contacts-block">
+                                <div class="title-contacts">Офис продаж</div>
+                                <p class="contacts-info">
+                                    ул. Тимирязева 24А <br>
+                                    Часы работы: Пн - Пт 9:00 - 18:00 <br><br>
+                                    E-mail: <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                </p>
+                                <div class="tel-contacts">
+                                    <a href="tel:73422103030">+7 (982) 123-45-67</a>
+                                </div>
+    
+                                <button class="btn-contact">Написать письмо</button>
+                            </div>
+                            <div class="contacts-block">
+                                <div class="title-contacts">Отдел гарантии</div>
+                                <div class="tel-contacts">
+                                    <a href="tel:73422103030">+7 (982) 123-45-67</a>
+                                </div>
+                                <p>Прием звонков по будням: 9:00 - 18:00</p>
+    
+                                <button class="btn-contact">Оставить заявку</button>
+                            </div>
+                            <div class="contacts-block">
+                                <div class="title-contacts">Отдел маркетинга</div>
+                                <div class="tel-contacts">
+                                    <a href="tel:73422103030">+7 (982) 123-45-67</a>
+                                </div>
+    
+                                <button class="btn-contact">Отправить предложение</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-sm-6 col-md-6 col-xl-8" style="padding: 0;">
+                        <div id="yandexmap" style="width: 100%; height: 100%; min-height: 500px ; filter: grayscale(0.8);"></div>
+                    </div>
+                </div>
+            </section>
+            <div style="padding-bottom: 150px;"></div>
+        </div>
+    </div>
+</body>
+</html>
